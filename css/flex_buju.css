@@ -1,4 +1,7 @@
-html header, html .box header, html footer, html .box footer { width: 100%; height: 50px; background: blue; }
+@font-face { font-family: 'iconfont'; src: url("../font/iconfont.eot"); src: url("../font/iconfont.eot?#iefix") format("embedded-opentype"), url("../font/iconfont.woff") format("woff"), url("../font/iconfont.ttf") format("truetype"), url("../font/iconfont.svg#iconfont") format("svg"); }
+.iconfont { font-family: "iconfont" !important; font-size: 20px; font-style: normal; -webkit-font-smoothing: antialiased; -webkit-text-stroke-width: 0.2px; -moz-osx-font-smoothing: grayscale; }
+
+html header, html .box header, html footer, html .box footer { width: 100%; height: 50px; background: #000; }
 
 html, html body, html .box { width: 100%; height: 100%; padding: 0; }
 html body, html .box body { margin: 0; }
@@ -7,5 +10,8 @@ html .box { margin: 0; display: flex; flex-direction: column; }
 html header, html .box header { top: 0; }
 html section, html .box section { overflow-y: auto; width: 100%; flex: 1; }
 html footer, html .box footer { bottom: 0; }
+html footer ul, html .box footer ul { display: flex; height: 100%; }
+html footer ul li, html .box footer ul li { height: 100%; display: flex; flex-direction: column; flex: 1; list-style: none; margin: 0; padding: 0; justify-content: center; align-items: center; }
+html footer ul li span, html .box footer ul li span { display: block; color: #0f0; }
 
 /*# sourceMappingURL=flex_buju.css.map */
